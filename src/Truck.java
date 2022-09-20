@@ -3,9 +3,11 @@ public class Truck extends Transport {
         super(modelName, wheelsCount);
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку на грузовике");
-    }
+   @Override
+   public void updateTyre() {
+       for (int i = 0; i < getWheelsCount(); i++) {
+           System.out.println("Меняем покрышку на грузовике");
+       }}
     public void checkEngine() {
         System.out.println("Проверяем двигатель на грузовике");
     }
@@ -14,6 +16,7 @@ public class Truck extends Transport {
     }
     @Override
     public void service() {
+        System.out.println("Обслуживаем " + getModelName());
         updateTyre();
         checkEngine();
         checkTrailer();

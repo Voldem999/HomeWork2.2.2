@@ -12,12 +12,12 @@ public class Main {
         System.out.println();
         station.check(car2);
         System.out.println();
-        station.check(bicycle);
-        System.out.println();
-        station.check(bicycle2);
-        System.out.println();
         station.check(truck);
         System.out.println();
         station.check(truck2);
+        System.out.println();
+        station.check(bicycle);
+        System.out.println();
+        station.check(bicycle2);
     }
 }
